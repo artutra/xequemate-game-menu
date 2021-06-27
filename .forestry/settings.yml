@@ -12,9 +12,6 @@ sections:
   new_doc_ext: json
   templates:
   - template-todos-os-jogos
-- type: document
-  path: test
-  label: Teste
 - type: directory
   path: workspace/assets/content/jogos
   label: Jogos
