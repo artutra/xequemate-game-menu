@@ -21,4 +21,4 @@ fields:
     labelField: 
   label: Games
 pages:
-- workspace/assets/content/games/all2.json
+- workspace/assets/content/games/all.json
