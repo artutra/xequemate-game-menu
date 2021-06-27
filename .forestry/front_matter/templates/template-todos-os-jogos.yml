@@ -10,5 +10,23 @@ fields:
     min: 
     max: 
   label: Lista de jogos
+- name: games
+  type: field_group_list
+  fields:
+  - name: titulo
+    type: text
+    config:
+      required: false
+    label: Título
+  - name: imagem
+    type: file
+    config:
+      maxSize: 64
+    label: Imagem
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Games
 pages:
 - workspace/assets/content/games/all.json
