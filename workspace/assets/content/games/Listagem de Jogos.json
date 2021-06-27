@@ -4,8 +4,13 @@
   ],
   "games": [
     {
-      "titulo": "Dobbble",
-      "imagem": "uploads/ascension.jpg"
+      "titulo": "Ascension",
+      "imagem": "uploads/ascension.jpg",
+      "descricao": "Um jogo bom demais",
+      "tempo_de_jogo": 90,
+      "idade": 14,
+      "dificuldade": "Difícil",
+      "quantidade_de_jogadores": "2 a 4 jogadores"
     }
   ]
 }
