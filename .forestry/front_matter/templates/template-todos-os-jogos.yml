@@ -2,8 +2,11 @@
 label: Template Todos os Jogos
 hide_body: true
 fields:
-- name: games
-  type: include
-  config: {}
-  template: template-jogo
-  label: Jogos
+- name: game-list
+  type: blocks
+  template_types:
+  - template-jogo
+  config:
+    min: 
+    max: 
+  label: Lista de jogos
