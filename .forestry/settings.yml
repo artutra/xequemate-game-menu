@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: test
+  label: Teste
+  match: "**/*"
 - type: directory
   path: workspace/assets/content/jogos
   label: Jogos
@@ -12,9 +16,6 @@ sections:
   new_doc_ext: json
   templates:
   - template-jogo
-- type: document
-  path: woskspace/assets/content/todos-os-jogos
-  label: Todos os Jogos
 upload_dir: workspace/assets/uploads
 public_path: uploads
 front_matter_path: "/media"
