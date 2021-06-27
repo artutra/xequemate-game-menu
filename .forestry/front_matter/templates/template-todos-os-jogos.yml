@@ -1,4 +1,9 @@
 ---
 label: Template Todos os Jogos
 hide_body: true
-fields: []
+fields:
+- name: games
+  type: include
+  config: {}
+  template: template-jogo
+  label: Jogos
