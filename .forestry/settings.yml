@@ -7,7 +7,6 @@ sections:
 - type: document
   path: test
   label: Teste
-  match: "**/*"
 - type: directory
   path: workspace/assets/content/jogos
   label: Jogos
