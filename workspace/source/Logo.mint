@@ -7,7 +7,7 @@ component Logo {
 
   fun render : Html {
     <div::logo>
-      <{ @assets(logo.jpg) }>
+      <img src={@asset(./logo.jpg)}/>
     </div>
   }
 }
