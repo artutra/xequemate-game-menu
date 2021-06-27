@@ -1,0 +1,10 @@
+{
+  "game-list": [
+    {
+      "template": "template-jogo",
+      "titulo": "Ascension",
+      "imagem": "uploads/ascension.jpg",
+      "descricao": "isso mais um"
+    }
+  ]
+}

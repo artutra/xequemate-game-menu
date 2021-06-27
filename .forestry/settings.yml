@@ -9,7 +9,7 @@ sections:
   label: Todos os Jogos
   create: all
   match: "**/*"
-  new_doc_ext: ".json"
+  new_doc_ext: json
   templates:
   - template-todos-os-jogos
 - type: document

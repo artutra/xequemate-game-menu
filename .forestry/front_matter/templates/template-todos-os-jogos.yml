@@ -10,3 +10,5 @@ fields:
     min: 
     max: 
   label: Lista de jogos
+pages:
+- workspace/assets/content/games/all.json
