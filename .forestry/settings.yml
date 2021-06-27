@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: woskspace/assets/content/todos-os-jogos
+  label: Todos os Jogos
+  match: "**/*"
 - type: directory
   path: workspace/assets/content/jogos
   label: Jogos
