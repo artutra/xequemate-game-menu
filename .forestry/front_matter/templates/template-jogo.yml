@@ -21,3 +21,5 @@ fields:
     schema:
       format: markdown
   label: Descrição
+pages:
+- workspace/assets/content/jogos/ascension.json
