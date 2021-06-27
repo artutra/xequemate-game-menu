@@ -1,9 +1,0 @@
----
-label: Template Test
-hide_body: true
-fields:
-- name: titulo
-  type: text
-  config:
-    required: false
-  label: Título
