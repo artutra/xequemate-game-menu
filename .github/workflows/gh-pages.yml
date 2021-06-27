@@ -1,0 +1,37 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: fabasoad/setup-mint-action@main
+      - name: Build Mint
+        run: cd workspace && mint build
+
+      - name: Add "/xequemate-game-menu" to att src on script
+        uses: mingjun97/file-regex-replace@master
+        with:
+          regex: 'src="/index.js"'
+          replacement: 'src="/xequemate-game-menu/index.js"'
+          include: 'index.html'
+
+      - name: Add "/xequemate-game-menu" to att href on assets
+        uses: mingjun97/file-regex-replace@master
+        with:
+          regex: 'href="(?!http)'
+          replacement: 'href="/xequemate-game-menu'
+          include: 'index.html'
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./workspace/dist
