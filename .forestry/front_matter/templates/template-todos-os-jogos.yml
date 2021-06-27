@@ -15,6 +15,51 @@ fields:
     config:
       maxSize: 64
     label: Imagem
+  - name: descricao
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Descrição
+  - name: tempo_de_jogo
+    type: number
+    label: Tempo de Jogo
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: idade
+    type: number
+    label: Idade
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: dificuldade
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Fácil
+      - Moderado
+      - Difícil
+      - Muito difícil
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: DIficuldade
   config:
     min: 
     max: 
