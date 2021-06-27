@@ -1,4 +1,23 @@
 ---
 label: Template Jogo
 hide_body: true
-fields: []
+fields:
+- name: titulo
+  type: text
+  config:
+    required: false
+  label: Título
+- name: imagem
+  type: file
+  config:
+    maxSize: 64
+  label: Imagem
+- name: descricao
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Descrição
