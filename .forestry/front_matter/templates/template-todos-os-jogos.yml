@@ -2,14 +2,6 @@
 label: Template Todos os Jogos
 hide_body: true
 fields:
-- name: game-list
-  type: blocks
-  template_types:
-  - template-jogo
-  config:
-    min: 
-    max: 
-  label: Lista de jogos
 - name: games
   type: field_group_list
   fields:
