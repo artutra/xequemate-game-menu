@@ -30,3 +30,4 @@ fields:
   label: Games
 pages:
 - workspace/assets/content/games/all.json
+- workspace/assets/content/games/all2.json
