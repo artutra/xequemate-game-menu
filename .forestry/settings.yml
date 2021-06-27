@@ -5,11 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: jogos
+  path: workspace/assets/content/jogos
   label: Jogos
   create: all
   match: "**/*"
   new_doc_ext: json
+  templates:
+  - template-jogo
 upload_dir: workspace/assets/uploads
 public_path: uploads
 front_matter_path: "/media"
