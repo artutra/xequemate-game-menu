@@ -21,5 +21,3 @@ fields:
     schema:
       format: markdown
   label: Descrição
-pages:
-- jogos/Ascension.json
