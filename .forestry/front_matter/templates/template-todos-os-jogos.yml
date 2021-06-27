@@ -7,3 +7,5 @@ fields:
   config: {}
   template: template-jogo
   label: Jogos
+pages:
+- workspace/assets/content/games/all.md
