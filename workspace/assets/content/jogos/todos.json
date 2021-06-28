@@ -1,6 +1,16 @@
 {
   "games": [
     {
+      "titulo": "Dobble",
+      "imagem": "uploads/dobble.jpg",
+      "descricao": "Outro jogo bão",
+      "tempo_de_jogo": 5,
+      "idade": 10,
+      "dificuldade": "Fácil",
+      "maximo_de_jogadores": 5,
+      "minimo_de_jogadores": 1
+    },
+    {
       "titulo": "Ascension",
       "imagem": "uploads/ascension.jpg",
       "descricao": "Melhor jogo",
