@@ -1,4 +1,4 @@
-const CACHE = '1d41dbac49c04d5219163df91aeb7c65c147c72071543821a1ad17ce4116d4bf';
+const CACHE = 'e93b43745e15334cc5381f0555cccfb31589c952ad5ca1216da08d064393ae6b';
 const RUNTIME = 'runtime';
 const PRECACHE_URLS = ['/icon-512x512.png',
 '/icon-192x192.png',
