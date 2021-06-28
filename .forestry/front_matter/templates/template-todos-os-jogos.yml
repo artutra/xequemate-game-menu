@@ -78,5 +78,3 @@ fields:
     max: 
     labelField: 
   label: Games
-pages:
-- workspace/assets/content/games/Listagem de Jogos.json
