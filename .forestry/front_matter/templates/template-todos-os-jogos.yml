@@ -60,19 +60,26 @@ fields:
         file: 
         path: 
     label: DIficuldade
-  - name: quantidade_de_jogadores
-    type: select
-    default: []
+  - name: maximo_de_jogadores
+    type: number
+    label: Máximo de jogadores
+    description: ''
+    default: 0
+    required: true
     config:
-      required: false
-      options:
-      - 2 a 4 jogadores
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Quantidade de Jogadores
+      min: 
+      max: 
+      step: 
+  - name: minimo_de_jogadores
+    type: number
+    label: Mínimo de jogadores
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
   config:
     min: 
     max: 
