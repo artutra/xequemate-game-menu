@@ -8,7 +8,7 @@ fields:
   - name: titulo
     type: text
     config:
-      required: false
+      required: true
     label: Título
   - name: imagem
     type: file
@@ -19,7 +19,7 @@ fields:
     type: textarea
     default: ''
     config:
-      required: false
+      required: true
       wysiwyg: false
       schema:
         format: markdown
@@ -28,27 +28,29 @@ fields:
     type: number
     label: Tempo de Jogo
     description: ''
-    default: 0
+    default: 30
     required: true
     config:
       min: 
       max: 
       step: 
+      required: true
   - name: idade
     type: number
     label: Idade
     description: ''
-    default: 0
+    default: 6
     required: true
     config:
       min: 
       max: 
       step: 
+      required: true
   - name: dificuldade
     type: select
     default: []
     config:
-      required: false
+      required: true
       options:
       - Fácil
       - Moderado
@@ -60,9 +62,9 @@ fields:
         file: 
         path: 
     label: DIficuldade
-  - name: maximo_de_jogadores
+  - name: minimo_de_jogadores
     type: number
-    label: Máximo de jogadores
+    label: Mínimo de jogadores
     description: ''
     default: 0
     required: true
@@ -70,9 +72,10 @@ fields:
       min: 
       max: 
       step: 
-  - name: minimo_de_jogadores
+      required: true
+  - name: maximo_de_jogadores
     type: number
-    label: Mínimo de jogadores
+    label: Máximo de jogadores
     description: ''
     default: 0
     required: true
