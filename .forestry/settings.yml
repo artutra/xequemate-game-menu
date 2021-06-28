@@ -5,9 +5,9 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: workspace/assets/content/games
-  label: Todos os Jogos
-  create: all
+  path: workspace/assets/content/jogos
+  label: Jogos
+  create: documents
   match: "**/*"
   new_doc_ext: json
   templates:
