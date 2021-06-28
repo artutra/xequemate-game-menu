@@ -1,0 +1,14 @@
+{
+  "games": [
+    {
+      "titulo": "Ascension",
+      "imagem": "uploads/ascension.jpg",
+      "descricao": "Melhor jogo",
+      "tempo_de_jogo": 30,
+      "idade": 14,
+      "maximo_de_jogadores": 4,
+      "minimo_de_jogadores": 2,
+      "dificuldade": "Difícil"
+    }
+  ]
+}
