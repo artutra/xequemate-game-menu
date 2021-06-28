@@ -15,6 +15,12 @@ jobs:
       - name: Build Mint
         run: cd workspace && mint build
 
+      - name: Move /content folder to /dist
+        run: mv /workspace/assets/content /workspace/dist/
+
+      - name: Move /uploads folder to /dist
+        run: mv /workspace/assets/uploads /workspace/dist/
+
       - name: Add "/xequemate-game-menu" to att src on script
         uses: mingjun97/file-regex-replace@master
         with:
