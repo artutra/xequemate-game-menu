@@ -2,6 +2,20 @@ record GameListResponse {
   games : Array(Game)
 }
 
+enum Page {
+  Home
+  DifficultyTab(Difficulty)
+  GameView(Difficulty, String)
+  NotFound
+}
+
+enum Difficulty {
+  Easy
+  Moderate
+  Hard
+  VeryHard
+}
+
 record Game {
   titulo : String,
   imagem : String,
@@ -12,13 +26,36 @@ record Game {
   minimoDeJogadores : Number using "minimo_de_jogadores",
   dificuldade : String
 }
+
 store GameStore {
   state loading = false
   state gameList : GameListResponse = { games = [] }
   state error = ""
+  state page : Page = Page::Home
   const BASE_URL = "https://artutra.github.io/xequemate-game-menu"
 
-  fun initialize {
+  fun decodeDifficulty (difficultyStr : String) : Maybe(Difficulty) {
+    case (difficultyStr) {
+      "facil" => Maybe::Just(Difficulty::Easy)
+      "moderado" => Maybe::Just(Difficulty::Moderate)
+      "dificil" => Maybe::Just(Difficulty::Hard)
+      "muito-dificil" => Maybe::Just(Difficulty::VeryHard)
+      => Maybe::Nothing
+    }
+  }
+
+  fun setPage (page : Page) {
+    next { page = page }
+  }
+
+  fun initialize (page : Page) {
+    sequence {
+      setPage(page)
+      requestGames()
+    }
+  }
+
+  fun requestGames {
     sequence {
       /* Started to load the users */
       next { loading = true }

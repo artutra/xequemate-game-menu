@@ -9,6 +9,7 @@ component Main {
     height: 100vh;
     background: #562483;
     overflow: auto;
+
     * {
       font-family: "Gilroy", sans-serif;
     }
@@ -70,7 +71,7 @@ component Main {
 
       =>
         games
-        |> Array.map((g: Game) { <GameItem game={g}/>})
+        |> Array.map((g : Game) { <GameItem game={g}/> })
     }
   }
 
@@ -80,6 +81,9 @@ component Main {
         <Logo/>
         <h1>"Xeque Mate - Cardápio de jogos"</h1>
       </div>
+
+      <Tabs/>
+
       <div::container>
         <{ error }>
         <{ renderGames(gameList.games) }>
@@ -87,8 +91,36 @@ component Main {
     </div>
   }
 }
+
+component Tabs {
+  fun render {
+    <div>
+      <a href="/">
+        "Todos"
+      </a>
+
+      <a href="/facil">
+        "Facil"
+      </a>
+
+      <a href="/moderado">
+        "Moderado"
+      </a>
+
+      <a href="/dificil">
+        "Dificil"
+      </a>
+
+      <a href="/muito-dificil">
+        "Muito dificil"
+      </a>
+    </div>
+  }
+}
+
 component GameItem {
   property game : Game
+
   style card {
     background: #{Colors:ORANGE_500};
     border-radius: 1rem;
@@ -97,13 +129,16 @@ component GameItem {
     color: white;
     display: flex;
   }
+
   style thumb {
     width: 100px;
     height: 100px;
   }
+
   fun render {
     <div::card>
       <img::thumb src={GameStore:BASE_URL + "/" + game.imagem}/>
+
       <div>
         <h3>
           <{ game.titulo }>
