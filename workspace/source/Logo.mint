@@ -1,13 +1,10 @@
 component Logo {
   style logo {
-    svg {
-      height: 50px;
-    }
+    height: 60px;
+    width: 60px;
   }
 
   fun render : Html {
-    <div::logo>
-      <img src={@asset(./logo.jpg)}/>
-    </div>
+    <img::logo src={@asset(./logo.jpg)}/>
   }
 }
