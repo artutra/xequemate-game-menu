@@ -3,40 +3,40 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   const _enums = {}
   const mint = Mint(_enums)
 
-  const _normalizeEvent = function (event) {
-    return BC.ay(mint.normalizeEvent(event))
-  };
+  const _normalizeEvent = (event) => {
+    return BG.bb(mint.normalizeEvent(event))
+  }
 
-  const _R = mint.createRecord;
-  const _h = mint.createElement;
-  const _createPortal = mint.createPortal;
-  const _insertStyles = mint.insertStyles;
-  const _navigate = mint.navigate;
-  const _compare = mint.compare;
-  const _program = mint.program;
-  const _encode = mint.encode;
-  const _style = mint.style;
-  const _array = mint.array;
-  const _u = mint.update;
-  const _at = mint.at;
+  const _R = mint.createRecord
+  const _h = mint.createElement
+  const _createPortal = mint.createPortal
+  const _insertStyles = mint.insertStyles
+  const _navigate = mint.navigate
+  const _compare = mint.compare
+  const _program = mint.program
+  const _encode = mint.encode
+  const _style = mint.style
+  const _array = mint.array
+  const _u = mint.update
+  const _at = mint.at
 
-  window.TestContext = mint.TestContext;
-  const TestContext = mint.TestContext;
-  const ReactDOM = mint.ReactDOM;
-  const Decoder = mint.Decoder;
-  const Encoder = mint.Encoder;
-  const DateFNS = mint.DateFNS;
-  const Record = mint.Record;
-  const React = mint.React;
+  window.TestContext = mint.TestContext
+  const TestContext = mint.TestContext
+  const ReactDOM = mint.ReactDOM
+  const Decoder = mint.Decoder
+  const Encoder = mint.Encoder
+  const DateFNS = mint.DateFNS
+  const Record = mint.Record
+  const React = mint.React
 
-  const _C = mint.Component;
-  const _P = mint.Provider;
-  const _M = mint.Module;
-  const _S = mint.Store;
-  const _E = mint.Enum;
+  const _C = mint.Component
+  const _P = mint.Provider
+  const _M = mint.Module
+  const _S = mint.Store
+  const _E = mint.Enum
 
   const _m = (method) => {
-    let value;
+    let value
     return () => {
       if (value) { return value }
       value = method()
@@ -45,10 +45,10 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   }
 
   const _s = (item, callback) => {
-    if (item instanceof AU) {
+    if (item instanceof BF) {
       return item
-    } else if (item instanceof AS) {
-      return new AS(callback(item._0))
+    } else if (item instanceof BD) {
+      return new BD(callback(item._0))
     } else {
       return callback(item)
     }
@@ -56,103 +56,144 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
 
   class DoError extends Error {}
 
-  class AU extends _E{constructor(){super();this.length = 0}};class AS extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AX extends _E{constructor(){super();this.length = 0}};class AZ extends _E{constructor(){super();this.length = 0}};class AY extends _E{constructor(){super();this.length = 0}};class AW extends _E{constructor(){super();this.length = 0}};class AT extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AR extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AE extends _E{constructor(){super();this.length = 0}};class AG extends _E{constructor(){super();this.length = 0}};class AH extends _E{constructor(){super();this.length = 0}};class AI extends _E{constructor(){super();this.length = 0}};class AJ extends _E{constructor(){super();this.length = 0}};const B = _R({});const C = _R({});const D = _R({});const E = _R({});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({});const L = _R({});const M = _R({});const N = _R({});const O = _R({});const P = _R({});const Q = _R({});const R = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const S = _R({});const T = _R({});const U = _R({status:["status",Decoder.number],body:["body",Decoder.string]});const V = _R({});const W = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const X = _R({submatches:["submatches",Decoder.array(Decoder.string),Encoder.array()],match:["match",Decoder.string],index:["index",Decoder.number]});const Y = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const Z = _R({});const AA = _R({});const AB = _R({});const AC = _R({games:["games",Decoder.array(((_)=>AD.decode(_))),Encoder.array(((_)=>AD.encode(_)))]});const AD = _R({titulo:["titulo",Decoder.string],imagem:["imagem",Decoder.string],descricao:["descricao",Decoder.string],tempoDeJogo:["tempo_de_jogo",Decoder.number],idade:["idade",Decoder.number],maximoDeJogadores:["maximo_de_jogadores",Decoder.number],minimoDeJogadores:["minimo_de_jogadores",Decoder.number],dificuldade:["dificuldade",Decoder.string]});const AO=new(class extends _M{s(){return (window.innerWidth)}t(v,w,u){return ((() => {
+  class BE extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BC extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AX extends _E{constructor(){super();this.length = 0}};class AZ extends _E{constructor(){super();this.length = 0}};class AY extends _E{constructor(){super();this.length = 0}};class AW extends _E{constructor(){super();this.length = 0}};class BF extends _E{constructor(){super();this.length = 0}};class BD extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AG extends _E{constructor(){super();this.length = 0}};class AI extends _E{constructor(){super();this.length = 0}};class AJ extends _E{constructor(){super();this.length = 0}};class AK extends _E{constructor(){super();this.length = 0}};class AL extends _E{constructor(){super();this.length = 0}};class BM extends _E{constructor(){super();this.length = 0}};class BN extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BP extends _E{constructor(_0,_1){super();this._0 = _0;this._1 = _1;this.length = 2}};class BO extends _E{constructor(){super();this.length = 0}};class BI extends _E{constructor(){super();this.length = 0}};class BJ extends _E{constructor(){super();this.length = 0}};class BK extends _E{constructor(){super();this.length = 0}};class BL extends _E{constructor(){super();this.length = 0}};const B = _R({});const D = _R({});const E = _R({});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({});const L = _R({});const M = _R({});const N = _R({});const O = _R({});const P = _R({});const Q = _R({});const R = _R({});const S = _R({});const T = _R({key:["key",Decoder.string],value:["value",Decoder.string]});const U = _R({});const V = _R({status:["status",Decoder.number],body:["body",Decoder.string]});const W = _R({});const X = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const Y = _R({submatches:["submatches",Decoder.array(Decoder.string),Encoder.array()],match:["match",Decoder.string],index:["index",Decoder.number]});const Z = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const AA = _R({});const AB = _R({});const AC = _R({});const C = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const AD = _R({games:["games",Decoder.array(((_)=>AE.decode(_))),Encoder.array(((_)=>AE.encode(_)))]});const AE = _R({titulo:["titulo",Decoder.string],imagem:["imagem",Decoder.string],descricao:["descricao",Decoder.string],tempoDeJogo:["tempo_de_jogo",Decoder.number],idade:["idade",Decoder.number],maximoDeJogadores:["maximo_de_jogadores",Decoder.number],minimoDeJogadores:["minimo_de_jogadores",Decoder.number],dificuldade:["dificuldade",Decoder.string]});const AS=new(class extends _M{w(x){return (x.toString())}});const AT=new(class extends _M{y(){return (window.innerWidth)}z(ab,ac,aa){return ((() => {
       const listener = (event) => {
-        u(_normalizeEvent(event))
+        aa(_normalizeEvent(event))
       }
 
-      window.addEventListener(v, listener, w);
-      return () => window.removeEventListener(v, listener, w);
-    })())}});const AP=new(class extends _M{x(){return (([1e7] + -1e3 + -4e3 + -8e3 + -1e11)
-      .replace(/[018]/g, c =>
-        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4)
-          .toString(16)))}});const AQ=new(class extends _M{y(ac,z){return (()=>{let aa = z;if(aa instanceof AS){const ab = aa._0;return new AR(ab)} else if(aa instanceof AU){return new AT(ac)}})()}});const AV=new(class extends _M{ad(){return new T({withCredentials:false,method:`GET`,body:(null),headers:[],url:``})}ae(ag){return ((..._) => AV.af(ag, ..._))(((..._) => AV.ah(`GET`, ..._))(AV.ad()))}ah(aj,ai){return _u(ai, {method:aj})}af(al,ak){return _u(ak, {url:al})}am(ao){return AV.an(AP.x(), ao)}an(ap,aq){return (new Promise((resolve, reject) => {
+      window.addEventListener(ab, listener, ac);
+      return () => window.removeEventListener(ab, listener, ac);
+    })())}});const AU=new(class extends _M{ad(){return new U({withCredentials:false,method:`GET`,body:(null),headers:[],url:``})}ae(ag){return ((..._) => AU.af(ag, ..._))(((..._) => AU.ah(`GET`, ..._))(AU.ad()))}ah(aj,ai){return _u(ai, {method:aj})}af(al,ak){return _u(ak, {url:al})}am(ap){return AU.an(AV.ao(), ap)}an(aq,ar){return (new Promise((resolve, reject) => {
       if (!this._requests) { this._requests = {} }
 
       let xhr = new XMLHttpRequest()
 
-      this._requests[ap] = xhr
+      this._requests[aq] = xhr
 
-      xhr.withCredentials = aq.withCredentials
+      xhr.withCredentials = ar.withCredentials
 
       try {
-        xhr.open(aq.method.toUpperCase(), aq.url, true)
+        xhr.open(ar.method.toUpperCase(), ar.url, true)
       } catch (error) {
-        delete this._requests[ap]
+        delete this._requests[aq]
 
-        reject(new V({type:new AW(),status:(xhr.status),url:aq.url}))
+        reject(new W({type:new AW(),status:(xhr.status),url:ar.url}))
       }
 
-      aq.headers.forEach((item) => {
+      ar.headers.forEach((item) => {
         xhr.setRequestHeader(item.key, item.value)
       })
 
       xhr.addEventListener('error', (event) => {
-        delete this._requests[ap]
+        delete this._requests[aq]
 
-        reject(new V({type:new AX(),status:(xhr.status),url:aq.url}))
+        reject(new W({type:new AX(),status:(xhr.status),url:ar.url}))
       })
 
       xhr.addEventListener('timeout', (event) => {
-        delete this._requests[ap]
+        delete this._requests[aq]
 
-        reject(new V({type:new AY(),status:(xhr.status),url:aq.url}))
+        reject(new W({type:new AY(),status:(xhr.status),url:ar.url}))
       })
 
       xhr.addEventListener('load', (event) => {
-        delete this._requests[ap]
+        delete this._requests[aq]
 
-        resolve(new U({body:(xhr.responseText),status:(xhr.status)}))
+        resolve(new V({body:(xhr.responseText),status:(xhr.status)}))
       })
 
       xhr.addEventListener('abort', (event) => {
-        delete this._requests[ap]
+        delete this._requests[aq]
 
-        reject(new V({type:new AZ(),status:(xhr.status),url:aq.url}))
+        reject(new W({type:new AZ(),status:(xhr.status),url:ar.url}))
       })
 
-      xhr.send(aq.body)
-    }))}});const BA=new(class extends _M{ar(as){return (as.toString())}});const AN=new(class extends _M{m(au,at){return (at.map(au))}});const AM=new(class extends _M{i(av){return (av.toString())}});const BB=new(class extends _M{aw(ax){return ((() => {
+      xhr.send(ar.body)
+    }))}});const BA=new(class extends _M{as(at){return (at.toString())}});const AV=new(class extends _M{ao(){return (([1e7] + -1e3 + -4e3 + -8e3 + -1e11)
+      .replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4)
+          .toString(16)))}});const BB=new(class extends _M{au(ay,av){return (()=>{let aw = av;if(aw instanceof BD){const ax = aw._0;return new BC(ax)} else if(aw instanceof BF){return new BE(ay)}})()}});const AO=new(class extends _M{l(ba,az){return (az.map(ba))}});const BG=new(class extends _M{bb(bc){return new AC({bubbles:(bc.bubbles),cancelable:(bc.cancelable),currentTarget:(bc.currentTarget),defaultPrevented:(bc.defaultPrevented),dataTransfer:(bc.dataTransfer),clipboardData:(bc.clipboardData),eventPhase:(bc.eventPhase),isTrusted:(bc.isTrusted),target:(bc.target),timeStamp:(bc.timeStamp),type:(bc.type),data:(bc.data),altKey:(bc.altKey),charCode:(bc.charCode),ctrlKey:(bc.ctrlKey),key:(bc.key),keyCode:(bc.keyCode),locale:(bc.locale),location:(bc.location),metaKey:(bc.metaKey),repeat:(bc.repeat),shiftKey:(bc.shiftKey),which:(bc.which),button:(bc.button),buttons:(bc.buttons),clientX:(bc.clientX),clientY:(bc.clientY),pageX:(bc.pageX),pageY:(bc.pageY),screenX:(bc.screenX),screenY:(bc.screenY),detail:(bc.detail),deltaMode:(bc.deltaMode),deltaX:(bc.deltaX),deltaY:(bc.deltaY),deltaZ:(bc.deltaZ),animationName:(bc.animationName),pseudoElement:(bc.pseudoElement),propertyName:(bc.propertyName),elapsedTime:(bc.elapsedTime),event:bc})}});const BH=new(class extends _M{bd(be){return ((() => {
       try {
-        return new AS((JSON.parse(ax)))
+        return new BD((JSON.parse(be)))
       } catch (error) {
-        return new AU()
+        return new BF()
       }
-    })())}});const BC=new(class extends _M{ay(az){return new AA({bubbles:(az.bubbles),cancelable:(az.cancelable),currentTarget:(az.currentTarget),defaultPrevented:(az.defaultPrevented),dataTransfer:(az.dataTransfer),clipboardData:(az.clipboardData),eventPhase:(az.eventPhase),isTrusted:(az.isTrusted),target:(az.target),timeStamp:(az.timeStamp),type:(az.type),data:(az.data),altKey:(az.altKey),charCode:(az.charCode),ctrlKey:(az.ctrlKey),key:(az.key),keyCode:(az.keyCode),locale:(az.locale),location:(az.location),metaKey:(az.metaKey),repeat:(az.repeat),shiftKey:(az.shiftKey),which:(az.which),button:(az.button),buttons:(az.buttons),clientX:(az.clientX),clientY:(az.clientY),pageX:(az.pageX),pageY:(az.pageY),screenX:(az.screenX),screenY:(az.screenY),detail:(az.detail),deltaMode:(az.deltaMode),deltaX:(az.deltaX),deltaY:(az.deltaY),deltaZ:(az.deltaZ),animationName:(az.animationName),pseudoElement:(az.pseudoElement),propertyName:(az.propertyName),elapsedTime:(az.elapsedTime),event:az})}});const AF=new(class extends _M{ba(){return (()=>{let bb = AO.s();return (bb < 640 ? new AE() : (bb < 768 ? new AG() : (bb < 1024 ? new AH() : (bb < 1280 ? new AI() : new AJ()))))})()}constructor(){super();this._d({c:(()=>{return 640}),d:(()=>{return 768}),e:(()=>{return 1024}),f:(()=>{return 1280})})}});_program.addRoutes([{handler:(()=>{AL.bc()}),decoders:[],mapping:[],path:`*`}]);class A extends _C{$b(){const _={};(()=>{let b = this.a;if(b instanceof AE){Object.assign(_, {})} else if(b instanceof AG){Object.assign(_, {[`--a-a`]:AF.c + `px`})} else if(b instanceof AH){Object.assign(_, {[`--a-a`]:AF.d + `px`})} else if(b instanceof AI){Object.assign(_, {[`--a-a`]:AF.e + `px`})} else if(b instanceof AJ){Object.assign(_, {[`--a-a`]:AF.f + `px`})}})();return _}get a(){return AK.p;}get o(){return AL.q;}get n(){return AL.r;}componentWillUnmount(){AK._unsubscribe(this);AL._unsubscribe(this)}componentDidMount(){AK._subscribe(this);AL._subscribe(this)}g(h){return _h("div", {}, [_h("h3", {}, [h.titulo]),_h("p", {}, [`Descrição: `,h.descricao]),_h("p", {}, [`Tempo de jogo: `,AM.i(h.tempoDeJogo)]),_h("p", {}, [`Idade mínima: `,AM.i(h.idade)]),_h("p", {}, [`Minimo de jogadores: `,AM.i(h.minimoDeJogadores)]),_h("p", {}, [`Máximo de jogadores: `,AM.i(h.maximoDeJogadores)])])}j(k){return (()=>{let l = k;if(_compare(l, [])){return [_h("p", {}, [`Loading`])]} else{return ((..._) => AN.m(this.g, ..._))(k)}})()}render(){return _h("div", {className:`a`}, [_h("div", {className:`b`,style:_style([this.$b()])}, [_h("h1", {}, [`Xeque Mate - Cardápio de jogos`])]),this.n,this.j(this.o.games)])}};;const AL=new(class extends _S{constructor(){super();this.state={bd:false,q:new AC({games:[]}),r:``}}get bd(){return this.state.bd;}get q(){return this.state.q;}get r(){return this.state.r;}bc(){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bd:true})), _resolve)
-}));let be = await AV.am(AV.ae(`https://artutra.github.io/xequemate-game-menu/content/jogos/todos.json`));let _2 = ((..._) => AQ.y(`Json Parse Error`, ..._))(BB.aw(be.body));if(_2 instanceof Err){throw _2._0};let bf = _2._0;let _3 = ((_)=>AC.decode(_))(bf);if(_3 instanceof Err){let _error = _3._0;let bg = _error;_=new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({r:BA.ar(bg)})), _resolve)
-}));throw new DoError()};let bh = _3._0;_ = await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({q:bh})), _resolve)
-}))}catch(_error){if(!(_error instanceof DoError)){_ = new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({r:`Could not decode the response.`})), _resolve)
-}))}}finally {
-  new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bd:false})), _resolve)
-  }))
-};return _})()}});const AK=new(class extends _S{constructor(){super();this.state={p:AF.ba(),bi:AO.t(`resize`, false, ((bk)=>{return (()=>{let bj = AF.ba();return (!_compare(bj, this.p) ? new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({p:bj})), _resolve)
+    })())}});const AH=new(class extends _M{bf(){return (()=>{let bg = AT.y();return (bg < 640 ? new AG() : (bg < 768 ? new AI() : (bg < 1024 ? new AJ() : (bg < 1280 ? new AK() : new AL()))))})()}constructor(){super();this._d({c:(()=>{return 640}),d:(()=>{return 768}),e:(()=>{return 1024}),f:(()=>{return 1280})})}});const AR=new(class extends _M{constructor(){super();this._d({t:(()=>{return `#f97316`}),u:(()=>{return `#ea580c`})})}});_program.addRoutes([{handler:((by)=>{(()=>{let bz = AN.bk(by);if(bz instanceof BD){const ca = bz._0;return AN.bq(new BN(ca))} else if(bz instanceof BF){return AN.bq(new BO())}})()}),decoders:[Decoder.string],mapping:['difficulty'],path:`/:difficulty`},{handler:((cb, ce)=>{(()=>{let cc = AN.bk(cb);if(cc instanceof BD){const cd = cc._0;return AN.bq(new BP(cd,ce))} else if(cc instanceof BF){return AN.bq(new BO())}})()}),decoders:[Decoder.string,Decoder.string],mapping:['difficulty','slug'],path:`/:difficulty/:slug`},{handler:(()=>{AN.bq(new BM())}),decoders:[],mapping:[],path:`/`},{handler:(()=>{AN.bq(new BO())}),decoders:[],mapping:[],path:`*`}]);class AF extends _C{render(){return _h("img", {"src":`/assets/logo_67fee8dd321e2d06bd4d074d36dd08b6.jpg`,className:`a`})}};;class A extends _C{$c(){const _={};(()=>{let b = this.a;if(b instanceof AG){Object.assign(_, {})} else if(b instanceof AI){Object.assign(_, {[`--a-a`]:AH.c + `px`})} else if(b instanceof AJ){Object.assign(_, {[`--a-a`]:AH.d + `px`})} else if(b instanceof AK){Object.assign(_, {[`--a-a`]:AH.e + `px`})} else if(b instanceof AL){Object.assign(_, {[`--a-a`]:AH.f + `px`})}})();return _}$d(){const _={};(()=>{let g = this.a;if(g instanceof AG){Object.assign(_, {[`--b-a`]:`column`,[`--b-b`]:`center`})} else{Object.assign(_, {[`--b-a`]:`row`})}})();(()=>{let h = this.a;if(h instanceof AG){Object.assign(_, {[`--c-a`]:`1rem`,[`--c-b`]:`1rem`})} else{Object.assign(_, {})}})();return _}get a(){return AM.q;}get p(){return AN.r;}get o(){return AN.s;}componentWillUnmount(){AM._unsubscribe(this);AN._unsubscribe(this)}componentDidMount(){AM._subscribe(this);AN._subscribe(this)}i(j){return (()=>{let k = j;if(_compare(k, [])){return [_h("p", {}, [`Loading`])]} else{return ((..._) => AO.l(((m)=>{return _h(AP, {n:m})}), ..._))(j)}})()}render(){return _h("div", {className:`b`}, [_h("div", {className:`d c`,style:_style([this.$d(), this.$c()])}, [$a(),_h("h1", {}, [`Xeque Mate - Cardápio de jogos`])]),$b(),_h("div", {className:`c`,style:_style([this.$c()])}, [this.o,this.i(this.p.games)])])}};;class AQ extends _C{render(){return _h("div", {}, [_h("a", {"href":`/`}, [`Todos`]),_h("a", {"href":`/facil`}, [`Facil`]),_h("a", {"href":`/moderado`}, [`Moderado`]),_h("a", {"href":`/dificil`}, [`Dificil`]),_h("a", {"href":`/muito-dificil`}, [`Muito dificil`])])}};;class AP extends _C{constructor(props){super(props);this._d({n:[null,null]})}$e(){const _={[`--d-a`]:AR.t,[`--d-b`]:`1rem solid ` + AR.u};return _}render(){return _h("div", {className:`e`,style:_style([this.$e()])}, [_h("img", {"src":AN.v + `/` + this.n.imagem,className:`f`}),_h("div", {}, [_h("h3", {}, [this.n.titulo]),_h("p", {}, [`Descrição: `,this.n.descricao]),_h("p", {}, [`Tempo de jogo: `,AS.w(this.n.tempoDeJogo)]),_h("p", {}, [`Idade mínima: `,AS.w(this.n.idade)]),_h("p", {}, [`Minimo de jogadores: `,AS.w(this.n.minimoDeJogadores)]),_h("p", {}, [`Máximo de jogadores: `,AS.w(this.n.maximoDeJogadores)])])])}};;const $a=_m(() => _h(AF, {}));const $b=_m(() => _h(AQ, {}));const AM=new(class extends _S{constructor(){super();this.state={q:AH.bf(),bh:AT.z(`resize`, false, ((bj)=>{return (()=>{let bi = AH.bf();return (!_compare(bi, this.q) ? new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({q:bi})), _resolve)
 })) : new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({})), _resolve)
-})))})()}))}}get p(){return this.state.p;}get bi(){return this.state.bi;}});_insertStyles(`
+})))})()}))}}get q(){return this.state.q;}get bh(){return this.state.bh;}});const AN=new(class extends _S{constructor(){super();this.state={bt:false,r:new AD({games:[]}),s:``,bo:new BM()};this._d({v:(()=>{return `https://artutra.github.io/xequemate-game-menu`})})}get bt(){return this.state.bt;}get r(){return this.state.r;}get s(){return this.state.s;}get bo(){return this.state.bo;}bk(bl){return (()=>{let bm = bl;if(_compare(bm, `facil`)){return new BD(new BI())} else if(_compare(bm, `moderado`)){return new BD(new BJ())} else if(_compare(bm, `dificil`)){return new BD(new BK())} else if(_compare(bm, `muito-dificil`)){return new BD(new BL())} else{return new BF()}})()}bn(bp){return new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bo:bp})), _resolve)
+}))}bq(br){return (async()=>{let _ = null;try{await AN.bn(br);_ = await AN.bs()}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}bs(){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bt:true})), _resolve)
+}));let bu = await AU.am(AU.ae(AN.v + `/content/jogos/todos.json`));let _2 = ((..._) => BB.au(`Json Parse Error`, ..._))(BH.bd(bu.body));if(_2 instanceof Err){throw _2._0};let bv = _2._0;let _3 = ((_)=>AD.decode(_))(bv);if(_3 instanceof Err){let _error = _3._0;let bw = _error;_=new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({s:BA.as(bw)})), _resolve)
+}));throw new DoError()};let bx = _3._0;_ = await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({r:bx})), _resolve)
+}))}catch(_error){if(!(_error instanceof DoError)){_ = new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({s:`Could not decode the response.`})), _resolve)
+}))}}finally {
+  new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bt:false})), _resolve)
+  }))
+};return _})()}});_insertStyles(`
 .a {
-  display: block;
-  font-weight: bold;
-}
-
-.a * {
-  font-family: "Gilroy", sans-serif;
+  height: 60px;
+  width: 60px;
 }
 
 .b {
+  display: block;
+  font-weight: bold;
+  width: 100vw;
+  height: 100vh;
+  background: #562483;
+  overflow: auto;
+}
+
+.b * {
+  font-family: "Gilroy", sans-serif;
+}
+
+.c {
   margin: auto;
   max-width: var(--a-a);
 }
+
+.d {
+  display: flex;
+  justify-content: space-between;
+  align-items: var(--b-b, center);
+  padding: 1rem 0 1rem 0;
+  flex-direction: var(--b-a);
+}
+
+.d h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  color: white;
+  padding-left: var(--c-a);
+  padding-right: var(--c-b);
+}
+
+.e {
+  background: var(--d-a);
+  border-radius: 1rem;
+  border: var(--d-b);
+  padding: 1rem;
+  color: white;
+  display: flex;
+}
+
+.f {
+  width: 100px;
+  height: 100px;
+}
 `)
 
-  const Nothing = AU
-  const Just = AS
-  const Err = AT
-  const Ok = AR
+  const Nothing = BF
+  const Just = BD
+  const Err = BE
+  const Ok = BC
 
-  _enums.nothing = AU
-  _enums.just = AS
-  _enums.err = AT
-  _enums.ok = AR
+  _enums.nothing = BF
+  _enums.just = BD
+  _enums.err = BE
+  _enums.ok = BC
 
+  
   
 _program.render(A, {})
 })()
