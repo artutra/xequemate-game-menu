@@ -12,6 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: fabasoad/setup-mint-action@main
+        with:
+          version: 0.14.0
       - name: Build Mint
         run: cd workspace && mint build
 
