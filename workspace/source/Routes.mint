@@ -1,6 +1,6 @@
 routes {
   /:difficulty (difficulty : String) {
-    case (GameStore.decodeDifficulty(difficulty)) {
+    case (GameStore.decodeDifficultyUrl(difficulty)) {
       Maybe::Just(decodedDifficulty) =>
         GameStore.initialize(Page::DifficultyTab(decodedDifficulty))
 
@@ -10,7 +10,7 @@ routes {
   }
 
   /:difficulty/:slug (difficulty : String, slug : String) {
-    case (GameStore.decodeDifficulty(difficulty)) {
+    case (GameStore.decodeDifficultyUrl(difficulty)) {
       Maybe::Just(decodedDifficulty) =>
         GameStore.initialize(Page::GameView(decodedDifficulty, slug))
 

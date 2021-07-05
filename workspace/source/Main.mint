@@ -64,17 +64,6 @@ component Main {
     }
   }
 
-  fun renderGames (games : Array(Game)) : Array(Html) {
-    case (games) {
-      [] =>
-        [<p>"Loading"</p>]
-
-      =>
-        games
-        |> Array.map((g : Game) { <GameItem game={g}/> })
-    }
-  }
-
   fun render : Html {
     <div::app>
       <div::nav::container>
@@ -83,12 +72,53 @@ component Main {
       </div>
 
       <Tabs/>
+      <PlayerQuantFilter/>
 
-      <div::container>
-        <{ error }>
-        <{ renderGames(gameList.games) }>
-      </div>
+      <GameList/>
     </div>
+  }
+}
+
+component PlayerQuantFilter {
+  state open = false
+  state minPlayers : Maybe(Number) = Maybe::Nothing
+  state maxPlayers : Maybe(Number) = Maybe::Just(1)
+
+  fun onClick {
+    next { open = !open }
+  }
+
+  fun onSubmit {
+    sequence {
+      url =
+        Window.url()
+
+      newSearch =
+        url.search
+        |> SearchParams.fromString
+        |> SearchParams.delete("minPlayers")
+        |> SearchParams.append("minPlayers", "2")
+        |> SearchParams.toString
+
+      Window.navigate(url.origin + url.path + "?" + newSearch)
+    }
+  }
+
+  fun render {
+    if (open) {
+      <div onClick={onClick}>
+        "Quantidade de jogadores"
+        <div>"is open"</div>
+
+        <button onClick={onSubmit}>
+          "Aplicar"
+        </button>
+      </div>
+    } else {
+      <div onClick={onClick}>
+        "Quantidade de jogadores"
+      </div>
+    }
   }
 }
 
@@ -114,61 +144,6 @@ component Tabs {
       <a href="/muito-dificil">
         "Muito dificil"
       </a>
-    </div>
-  }
-}
-
-component GameItem {
-  property game : Game
-
-  style card {
-    background: #{Colors:ORANGE_500};
-    border-radius: 1rem;
-    border: 1rem solid #{Colors:ORANGE_600};
-    padding: 1rem;
-    color: white;
-    display: flex;
-  }
-
-  style thumb {
-    width: 100px;
-    height: 100px;
-  }
-
-  fun render {
-    <div::card>
-      <img::thumb src={GameStore:BASE_URL + "/" + game.imagem}/>
-
-      <div>
-        <h3>
-          <{ game.titulo }>
-        </h3>
-
-        <p>
-          "Descrição: "
-          <{ game.descricao }>
-        </p>
-
-        <p>
-          "Tempo de jogo: "
-          <{ Number.toString(game.tempoDeJogo) }>
-        </p>
-
-        <p>
-          "Idade mínima: "
-          <{ Number.toString(game.idade) }>
-        </p>
-
-        <p>
-          "Minimo de jogadores: "
-          <{ Number.toString(game.minimoDeJogadores) }>
-        </p>
-
-        <p>
-          "Máximo de jogadores: "
-          <{ Number.toString(game.maximoDeJogadores) }>
-        </p>
-      </div>
     </div>
   }
 }

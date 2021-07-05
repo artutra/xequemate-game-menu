@@ -2,13 +2,6 @@ record GameListResponse {
   games : Array(Game)
 }
 
-enum Page {
-  Home
-  DifficultyTab(Difficulty)
-  GameView(Difficulty, String)
-  NotFound
-}
-
 enum Difficulty {
   Easy
   Moderate
@@ -31,10 +24,26 @@ store GameStore {
   state loading = false
   state gameList : GameListResponse = { games = [] }
   state error = ""
-  state page : Page = Page::Home
+  state titleSearch : Maybe(String) = Maybe::Nothing
+  state minPlayers : Maybe(Number) = Maybe::Nothing
+  state maxPlayers : Maybe(Number) = Maybe::Nothing
+  state minAge : Maybe(Number) = Maybe::Nothing
+  state maxAge : Maybe(Number) = Maybe::Nothing
+  state minDuration : Maybe(Number) = Maybe::Nothing
+  state maxDuration : Maybe(Number) = Maybe::Nothing
   const BASE_URL = "https://artutra.github.io/xequemate-game-menu"
 
   fun decodeDifficulty (difficultyStr : String) : Maybe(Difficulty) {
+    case (difficultyStr) {
+      "Fácil" => Maybe::Just(Difficulty::Easy)
+      "Moderado" => Maybe::Just(Difficulty::Moderate)
+      "Difícil" => Maybe::Just(Difficulty::Hard)
+      "Muito difícil" => Maybe::Just(Difficulty::VeryHard)
+      => Maybe::Nothing
+    }
+  }
+
+  fun decodeDifficultyUrl (difficultyStr : String) : Maybe(Difficulty) {
     case (difficultyStr) {
       "facil" => Maybe::Just(Difficulty::Easy)
       "moderado" => Maybe::Just(Difficulty::Moderate)
@@ -44,13 +53,72 @@ store GameStore {
     }
   }
 
-  fun setPage (page : Page) {
-    next { page = page }
+  fun encodeDifficulty (difficulty : Difficulty) : String {
+    case (difficulty) {
+      Difficulty::Easy => "Fácil"
+      Difficulty::Moderate => "Moderado"
+      Difficulty::Hard => "Difícil"
+      Difficulty::VeryHard => "Muito difícil"
+    }
+  }
+
+  fun decodeStringQueryParam (key : String) {
+    try {
+      title =
+        Window.url().search
+        |> SearchParams.fromString
+        |> SearchParams.get(key)
+    }
+  }
+
+  fun decodeNumberQueryParam (key : String) {
+    try {
+      title =
+        Window.url().search
+        |> SearchParams.fromString
+        |> SearchParams.get(key)
+        |> Maybe.map(Number.fromString)
+        |> Maybe.flatten
+    }
   }
 
   fun initialize (page : Page) {
     sequence {
-      setPage(page)
+      titleSearch =
+        decodeStringQueryParam("title")
+
+      next { titleSearch = titleSearch }
+
+      minPlayers =
+        decodeNumberQueryParam("minPlayers")
+
+      next { minPlayers = minPlayers }
+
+      maxPlayers =
+        decodeNumberQueryParam("maxPlayers")
+
+      next { maxPlayers = maxPlayers }
+
+      minAge =
+        decodeNumberQueryParam("minAge")
+
+      next { minAge = minAge }
+
+      maxAge =
+        decodeNumberQueryParam("maxAge")
+
+      next { maxAge = maxAge }
+
+      minDuration =
+        decodeNumberQueryParam("minDuration")
+
+      next { minDuration = minDuration }
+
+      maxDuration =
+        decodeNumberQueryParam("maxDuration")
+
+      next { maxDuration = maxDuration }
+      Application.setPage(page)
       requestGames()
     }
   }
