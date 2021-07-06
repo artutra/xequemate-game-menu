@@ -1,4 +1,4 @@
-const CACHE = '1f9c673718aca0c443f29f74272cdc3fa96f827cbd39ff91fa8ee152ab56a844'
+const CACHE = 'd9fec595c74efd951fb3dc9c4a087a3ab431b1b46a7ae41e0de9ef6cba4d4b4d'
 const PRECACHE_URLS = [
   '/assets/logo_67fee8dd321e2d06bd4d074d36dd08b6.jpg',
   '/external-stylesheets.css',

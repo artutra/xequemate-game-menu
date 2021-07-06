@@ -2,7 +2,7 @@
   "games": [
     {
       "titulo": "Dobble",
-      "imagem": "uploads/dobble.jpg",
+      "imagem": "uploads/dobble-pre-venda.png",
       "descricao": "Outro jogo bão",
       "tempo_de_jogo": 5,
       "idade": 10,
