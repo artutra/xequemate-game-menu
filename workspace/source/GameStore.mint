@@ -53,6 +53,15 @@ store GameStore {
     }
   }
 
+  fun encodeDifficultyUrl (difficulty : Difficulty) : String {
+    case (difficulty) {
+      Difficulty::Easy => "facil"
+      Difficulty::Moderate => "moderado"
+      Difficulty::Hard => "dificil"
+      Difficulty::VeryHard => "muito-dificil"
+    }
+  }
+
   fun encodeDifficulty (difficulty : Difficulty) : String {
     case (difficulty) {
       Difficulty::Easy => "Fácil"

@@ -15,26 +15,6 @@ component Main {
     }
   }
 
-  style container {
-    margin: auto;
-
-    case (br) {
-      Br::SM =>
-
-      Br::MD =>
-        max-width: #{ScreenSize:SM}px;
-
-      Br::LG =>
-        max-width: #{ScreenSize:MD}px;
-
-      Br::XL =>
-        max-width: #{ScreenSize:LG}px;
-
-      Br::XL2 =>
-        max-width: #{ScreenSize:XL}px;
-    }
-  }
-
   style nav {
     case (br) {
       Br::SM =>
@@ -66,14 +46,14 @@ component Main {
 
   fun render : Html {
     <div::app>
-      <div::nav::container>
-        <Logo/>
-        <h1>"Xeque Mate - Cardápio de jogos"</h1>
-      </div>
+      <Container>
+        <div::nav>
+          <Logo/>
+          <h1>"Xeque Mate - Cardápio de jogos"</h1>
+        </div>
+      </Container>
 
       <Tabs/>
-      <PlayerQuantFilter/>
-
       <GameList/>
     </div>
   }
@@ -123,27 +103,90 @@ component PlayerQuantFilter {
 }
 
 component Tabs {
+  connect Application exposing { page }
+
+  style tabs-container {
+    overflow-x: auto;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    display: flex;
+  }
+
+  style bottom-line {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ffffff1f;
+    margin-bottom: 1rem;
+  }
+
   fun render {
-    <div>
-      <a href="/">
-        "Todos"
-      </a>
+    <div::bottom-line>
+      <Container>
+        <div::tabs-container>
+          <Tab
+            href={Application.pageToUrl(Page::Home)}
+            title="Todos"
+            activeColor="white"
+            active={page == Page::Home}/>
 
-      <a href="/facil">
-        "Facil"
-      </a>
+          <Tab
+            href={Application.pageToUrl(Page::DifficultyTab(Difficulty::Easy))}
+            title="Fácil"
+            activeColor="#41B047"
+            active={page == Page::DifficultyTab(Difficulty::Easy)}/>
 
-      <a href="/moderado">
-        "Moderado"
-      </a>
+          <Tab
+            href={Application.pageToUrl(Page::DifficultyTab(Difficulty::Moderate))}
+            title="Moderado"
+            activeColor="#CA9917"
+            active={page == Page::DifficultyTab(Difficulty::Moderate)}/>
 
-      <a href="/dificil">
-        "Dificil"
-      </a>
+          <Tab
+            href={Application.pageToUrl(Page::DifficultyTab(Difficulty::Hard))}
+            title="Difícil"
+            activeColor="#BF1C22"
+            active={page == Page::DifficultyTab(Difficulty::Hard)}/>
 
-      <a href="/muito-dificil">
-        "Muito dificil"
-      </a>
+          <Tab
+            href={Application.pageToUrl(Page::DifficultyTab(Difficulty::VeryHard))}
+            title="Muito Difícil"
+            activeColor="#6f6f6f"
+            active={page == Page::DifficultyTab(Difficulty::VeryHard)}/>
+        </div>
+      </Container>
     </div>
+  }
+}
+
+component Tab {
+  property active : Bool = false
+  property activeColor : String = "black"
+  property title : String
+  property href : String
+
+  style tab {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 500;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+
+    if (active) {
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-bottom-color: #{activeColor};
+      color: #{activeColor};
+    } else {
+      color: white;
+    }
+  }
+
+  fun render {
+    <a::tab href={href}>
+      <{ title }>
+    </a>
   }
 }

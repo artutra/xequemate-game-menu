@@ -11,4 +11,15 @@ store Application {
   fun setPage (page : Page) {
     next { page = page }
   }
+
+  fun pageToUrl (page : Page) : String {
+    case (page) {
+      Page::Home => "/"
+
+      Page::DifficultyTab(difficulty) =>
+        "/" + GameStore.encodeDifficultyUrl(difficulty)
+
+      => "/"
+    }
+  }
 }
