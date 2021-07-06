@@ -19,6 +19,10 @@ routes {
     }
   }
 
+  /xequemate-game-menu/ {
+    GameStore.initialize(Page::Home)
+  }
+
   / {
     GameStore.initialize(Page::Home)
   }
