@@ -1,4 +1,5 @@
 component GameList {
+  connect Application exposing { page }
   connect Breakpoints exposing { br }
 
   connect GameStore exposing {
@@ -11,28 +12,6 @@ component GameList {
     maxAge,
     minDuration,
     maxDuration
-  }
-
-  connect Application exposing { page }
-
-  style container {
-    margin: auto;
-
-    case (br) {
-      Br::SM =>
-
-      Br::MD =>
-        max-width: #{ScreenSize:SM}px;
-
-      Br::LG =>
-        max-width: #{ScreenSize:MD}px;
-
-      Br::XL =>
-        max-width: #{ScreenSize:LG}px;
-
-      Br::XL2 =>
-        max-width: #{ScreenSize:XL}px;
-    }
   }
 
   fun filterByTitle (games : Array(Game)) {
@@ -121,11 +100,30 @@ component GameList {
     }
   }
 
+  style game-grid {
+    display: grid;
+    gap: 1rem;
+
+    case (br) {
+      Br::SM =>
+        grid-template-columns: 1fr;
+
+      Br::MD =>
+        grid-template-columns: 1fr;
+
+      =>
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
   fun render {
-    <div::container>
+    <Container>
       <{ error }>
-      <{ renderGames(gameList.games) }>
-    </div>
+
+      <div::game-grid>
+        <{ renderGames(gameList.games) }>
+      </div>
+    </Container>
   }
 }
 
@@ -133,17 +131,17 @@ component GameItem {
   property game : Game
 
   style card {
-    background: #{Colors:ORANGE_500};
-    border-radius: 1rem;
-    border: 1rem solid #{Colors:ORANGE_600};
-    padding: 1rem;
+    background: #6E30A8;
+    padding: 1.5rem;
     color: white;
     display: flex;
+    align-items: center;
   }
 
   style thumb {
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1.5rem;
   }
 
   fun render {
