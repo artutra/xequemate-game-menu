@@ -56,7 +56,7 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
 
   class DoError extends Error {}
 
-  class BR extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BQ extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BL extends _E{constructor(){super();this.length = 0}};class BN extends _E{constructor(){super();this.length = 0}};class BM extends _E{constructor(){super();this.length = 0}};class BK extends _E{constructor(){super();this.length = 0}};class BE extends _E{constructor(){super();this.length = 0}};class BF extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AH extends _E{constructor(){super();this.length = 0}};class AI extends _E{constructor(){super();this.length = 0}};class AU extends _E{constructor(){super();this.length = 0}};class AV extends _E{constructor(){super();this.length = 0}};class AW extends _E{constructor(){super();this.length = 0}};class BA extends _E{constructor(){super();this.length = 0}};class BB extends _E{constructor(){super();this.length = 0}};class BC extends _E{constructor(){super();this.length = 0}};class BD extends _E{constructor(){super();this.length = 0}};class AZ extends _E{constructor(){super();this.length = 0}};class AP extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BV extends _E{constructor(_0,_1){super();this._0 = _0;this._1 = _1;this.length = 2}};class BU extends _E{constructor(){super();this.length = 0}};const B = _R({});const D = _R({});const E = _R({});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({});const L = _R({});const M = _R({});const N = _R({});const O = _R({});const P = _R({});const Q = _R({});const R = _R({});const S = _R({});const T = _R({key:["key",Decoder.string],value:["value",Decoder.string]});const U = _R({});const V = _R({status:["status",Decoder.number],body:["body",Decoder.string]});const W = _R({});const X = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const Y = _R({submatches:["submatches",Decoder.array(Decoder.string),Encoder.array()],match:["match",Decoder.string],index:["index",Decoder.number]});const Z = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const AA = _R({});const AB = _R({});const AC = _R({});const C = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const AD = _R({games:["games",Decoder.array(((_)=>AE.decode(_))),Encoder.array(((_)=>AE.encode(_)))]});const AE = _R({titulo:["titulo",Decoder.string],imagem:["imagem",Decoder.string],descricao:["descricao",Decoder.string],tempoDeJogo:["tempo_de_jogo",Decoder.number],idade:["idade",Decoder.number],maximoDeJogadores:["maximo_de_jogadores",Decoder.number],minimoDeJogadores:["minimo_de_jogadores",Decoder.number],dificuldade:["dificuldade",Decoder.string]});const AS=new(class extends _M{be(bx){return (bx.toString())}by(bz){return ((() => {
+  class BR extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BQ extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BL extends _E{constructor(){super();this.length = 0}};class BN extends _E{constructor(){super();this.length = 0}};class BM extends _E{constructor(){super();this.length = 0}};class BK extends _E{constructor(){super();this.length = 0}};class BE extends _E{constructor(){super();this.length = 0}};class BF extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AO extends _E{constructor(){super();this.length = 0}};class AP extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class BV extends _E{constructor(_0,_1){super();this._0 = _0;this._1 = _1;this.length = 2}};class BU extends _E{constructor(){super();this.length = 0}};class AQ extends _E{constructor(){super();this.length = 0}};class AR extends _E{constructor(){super();this.length = 0}};class AS extends _E{constructor(){super();this.length = 0}};class AT extends _E{constructor(){super();this.length = 0}};class AF extends _E{constructor(){super();this.length = 0}};class AU extends _E{constructor(){super();this.length = 0}};class BB extends _E{constructor(){super();this.length = 0}};class BC extends _E{constructor(){super();this.length = 0}};class BD extends _E{constructor(){super();this.length = 0}};const B = _R({});const D = _R({});const E = _R({});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({});const L = _R({});const M = _R({});const N = _R({});const O = _R({});const P = _R({});const Q = _R({});const R = _R({});const S = _R({});const T = _R({key:["key",Decoder.string],value:["value",Decoder.string]});const U = _R({});const V = _R({status:["status",Decoder.number],body:["body",Decoder.string]});const W = _R({});const X = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const Y = _R({submatches:["submatches",Decoder.array(Decoder.string),Encoder.array()],match:["match",Decoder.string],index:["index",Decoder.number]});const Z = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const AA = _R({});const AB = _R({});const AC = _R({});const C = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const AD = _R({games:["games",Decoder.array(((_)=>AE.decode(_))),Encoder.array(((_)=>AE.encode(_)))]});const AE = _R({titulo:["titulo",Decoder.string],imagem:["imagem",Decoder.string],descricao:["descricao",Decoder.string],tempoDeJogo:["tempo_de_jogo",Decoder.number],idade:["idade",Decoder.number],maximoDeJogadores:["maximo_de_jogadores",Decoder.number],minimoDeJogadores:["minimo_de_jogadores",Decoder.number],dificuldade:["dificuldade",Decoder.string]});const AZ=new(class extends _M{bp(bx){return (bx.toString())}by(bz){return ((() => {
       let value = parseFloat(bz)
 
       if (isNaN(value)) {
@@ -71,7 +71,7 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
 
       window.addEventListener(cg, listener, ch);
       return () => window.removeEventListener(cg, listener, ch);
-    })())}});const AO=new(class extends _M{g(cj,ci){return (ci.indexOf(cj) != -1)}});const BI=new(class extends _M{ck(){return new U({withCredentials:false,method:`GET`,body:(null),headers:[],url:``})}cl(cn){return ((..._) => BI.cm(cn, ..._))(((..._) => BI.co(`GET`, ..._))(BI.ck()))}co(cq,cp){return _u(cp, {method:cq})}cm(cs,cr){return _u(cr, {url:cs})}ct(cw){return BI.cu(BJ.cv(), cw)}cu(cx,cy){return (new Promise((resolve, reject) => {
+    })())}});const AX=new(class extends _M{v(cj,ci){return (ci.indexOf(cj) != -1)}});const BI=new(class extends _M{ck(){return new U({withCredentials:false,method:`GET`,body:(null),headers:[],url:``})}cl(cn){return ((..._) => BI.cm(cn, ..._))(((..._) => BI.co(`GET`, ..._))(BI.ck()))}co(cq,cp){return _u(cp, {method:cq})}cm(cs,cr){return _u(cr, {url:cs})}ct(cw){return BI.cu(BJ.cv(), cw)}cu(cx,cy){return (new Promise((resolve, reject) => {
       if (!this._requests) { this._requests = {} }
 
       let xhr = new XMLHttpRequest()
@@ -136,61 +136,31 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
       this._a.href = dg
 
       return new Z({hostname:(this._a.hostname || ""),protocol:(this._a.protocol || ""),origin:(this._a.origin || ""),path:(this._a.pathname || ""),search:(this._a.search || ""),hash:(this._a.hash || ""),host:(this._a.host || ""),port:(this._a.port || "")})
-    })())}});const AN=new(class extends _M{f(dj,dh){return (()=>{let di = dh;if(di instanceof BF){const dk = di._0;return new BF(dj(dk))} else if(di instanceof BE){return new BE()}})()}e(dn,dl){return (()=>{let dm = dl;if(dm instanceof BE){return dn} else if(dm instanceof BF){const dp = dm._0;return dp}})()}dq(du,dr){return (()=>{let ds = dr;if(ds instanceof BF){const dt = ds._0;return new BQ(dt)} else if(ds instanceof BE){return new BR(du)}})()}dv(dw){return (()=>{let dx = dw;if(dx instanceof BE){return new BE()} else if(dx instanceof BF){const dy = dx._0;return dy}})()}});const AM=new(class extends _M{al(ea,dz){return (dz.map(ea))}d(ec,eb){return (eb.filter(ec))}});const BS=new(class extends _M{ed(ee){return new AC({bubbles:(ee.bubbles),cancelable:(ee.cancelable),currentTarget:(ee.currentTarget),defaultPrevented:(ee.defaultPrevented),dataTransfer:(ee.dataTransfer),clipboardData:(ee.clipboardData),eventPhase:(ee.eventPhase),isTrusted:(ee.isTrusted),target:(ee.target),timeStamp:(ee.timeStamp),type:(ee.type),data:(ee.data),altKey:(ee.altKey),charCode:(ee.charCode),ctrlKey:(ee.ctrlKey),key:(ee.key),keyCode:(ee.keyCode),locale:(ee.locale),location:(ee.location),metaKey:(ee.metaKey),repeat:(ee.repeat),shiftKey:(ee.shiftKey),which:(ee.which),button:(ee.button),buttons:(ee.buttons),clientX:(ee.clientX),clientY:(ee.clientY),pageX:(ee.pageX),pageY:(ee.pageY),screenX:(ee.screenX),screenY:(ee.screenY),detail:(ee.detail),deltaMode:(ee.deltaMode),deltaX:(ee.deltaX),deltaY:(ee.deltaY),deltaZ:(ee.deltaZ),animationName:(ee.animationName),pseudoElement:(ee.pseudoElement),propertyName:(ee.propertyName),elapsedTime:(ee.elapsedTime),event:ee})}});const BT=new(class extends _M{ef(eg){return ((() => {
+    })())}});const AW=new(class extends _M{u(dj,dh){return (()=>{let di = dh;if(di instanceof BF){const dk = di._0;return new BF(dj(dk))} else if(di instanceof BE){return new BE()}})()}t(dn,dl){return (()=>{let dm = dl;if(dm instanceof BE){return dn} else if(dm instanceof BF){const dp = dm._0;return dp}})()}dq(du,dr){return (()=>{let ds = dr;if(ds instanceof BF){const dt = ds._0;return new BQ(dt)} else if(ds instanceof BE){return new BR(du)}})()}dv(dw){return (()=>{let dx = dw;if(dx instanceof BE){return new BE()} else if(dx instanceof BF){const dy = dx._0;return dy}})()}});const AV=new(class extends _M{ba(ea,dz){return (dz.map(ea))}s(ec,eb){return (eb.filter(ec))}});const BS=new(class extends _M{ed(ee){return new AC({bubbles:(ee.bubbles),cancelable:(ee.cancelable),currentTarget:(ee.currentTarget),defaultPrevented:(ee.defaultPrevented),dataTransfer:(ee.dataTransfer),clipboardData:(ee.clipboardData),eventPhase:(ee.eventPhase),isTrusted:(ee.isTrusted),target:(ee.target),timeStamp:(ee.timeStamp),type:(ee.type),data:(ee.data),altKey:(ee.altKey),charCode:(ee.charCode),ctrlKey:(ee.ctrlKey),key:(ee.key),keyCode:(ee.keyCode),locale:(ee.locale),location:(ee.location),metaKey:(ee.metaKey),repeat:(ee.repeat),shiftKey:(ee.shiftKey),which:(ee.which),button:(ee.button),buttons:(ee.buttons),clientX:(ee.clientX),clientY:(ee.clientY),pageX:(ee.pageX),pageY:(ee.pageY),screenX:(ee.screenX),screenY:(ee.screenY),detail:(ee.detail),deltaMode:(ee.deltaMode),deltaX:(ee.deltaX),deltaY:(ee.deltaY),deltaZ:(ee.deltaZ),animationName:(ee.animationName),pseudoElement:(ee.pseudoElement),propertyName:(ee.propertyName),elapsedTime:(ee.elapsedTime),event:ee})}});const BT=new(class extends _M{ef(eg){return ((() => {
       try {
         return new BF((JSON.parse(eg)))
       } catch (error) {
         return new BE()
       }
-    })())}});const AT=new(class extends _M{eh(){return (()=>{let ei = BG.cd();return (ei < 640 ? new AH() : (ei < 768 ? new AI() : (ei < 1024 ? new AU() : (ei < 1280 ? new AV() : new AW()))))})()}constructor(){super();this._d({bh:(()=>{return 640}),bi:(()=>{return 768}),bj:(()=>{return 1024}),bk:(()=>{return 1280})})}});_program.addRoutes([{handler:((fv)=>{(()=>{let fw = AL.ep(fv);if(fw instanceof BF){const fx = fw._0;return AL.fb(new AP(fx))} else if(fw instanceof BE){return AL.fb(new BU())}})()}),decoders:[Decoder.string],mapping:['difficulty'],path:`/:difficulty`},{handler:((fy, gb)=>{(()=>{let fz = AL.ep(fy);if(fz instanceof BF){const ga = fz._0;return AL.fb(new BV(ga,gb))} else if(fz instanceof BE){return AL.fb(new BU())}})()}),decoders:[Decoder.string,Decoder.string],mapping:['difficulty','slug'],path:`/:difficulty/:slug`},{handler:(()=>{AL.fb(new AZ())}),decoders:[],mapping:[],path:`/xequemate-game-menu/`},{handler:(()=>{AL.fb(new AZ())}),decoders:[],mapping:[],path:`/`},{handler:(()=>{AL.fb(new BU())}),decoders:[],mapping:[],path:`*`}]);class AF extends _C{render(){return _h("img", {"src":`/assets/logo_67fee8dd321e2d06bd4d074d36dd08b6.jpg`,className:`a`})}};;class AG extends _C{$b(){const _={};(()=>{let b = this.a;if(b instanceof AH){Object.assign(_, {[`--a-a`]:`1fr`})} else if(b instanceof AI){Object.assign(_, {[`--a-a`]:`1fr`})} else{Object.assign(_, {[`--a-a`]:`1fr 1fr 1fr`})}})();return _}get ac(){return AJ.aq;}get a(){return AK.ar;}get ap(){return AL.as;}get ao(){return AL.at;}get z(){return AL.au;}get w(){return AL.av;}get j(){return AL.aw;}get ay(){return AL.ax;}get ba(){return AL.az;}get r(){return AL.bb;}get o(){return AL.bc;}componentWillUnmount(){AJ._unsubscribe(this);AK._unsubscribe(this);AL._unsubscribe(this)}componentDidMount(){AJ._subscribe(this);AK._subscribe(this);AL._subscribe(this)}c(k){return ((..._) => AM.d(((i)=>{return ((..._) => AN.e(true, ..._))(((..._) => AN.f(((h)=>{return AO.g(h, i.titulo)}), ..._))(this.j))}), ..._))(k)}l(s){return ((..._) => AM.d(((m)=>{return ((..._) => AN.e(true, ..._))(((..._) => AN.f(((n)=>{return m.tempoDeJogo <= n}), ..._))(this.o))}), ..._))(((..._) => AM.d(((p)=>{return ((..._) => AN.e(true, ..._))(((..._) => AN.f(((q)=>{return p.tempoDeJogo >= q}), ..._))(this.r))}), ..._))(s))}t(aa){return ((..._) => AM.d(((u)=>{return ((..._) => AN.e(true, ..._))(((..._) => AN.f(((v)=>{return u.minimoDeJogadores <= v}), ..._))(this.w))}), ..._))(((..._) => AM.d(((x)=>{return ((..._) => AN.e(true, ..._))(((..._) => AN.f(((y)=>{return x.minimoDeJogadores >= y}), ..._))(this.z))}), ..._))(aa))}ab(ah){return (()=>{let ad = this.ac;if(ad instanceof AP){const ag = ad._0;return ((..._) => AM.d(((ae)=>{return _compare(ae.dificuldade, AL.af(ag))}), ..._))(ah)} else{return ah}})()}ai(aj){return (()=>{let ak = aj;if(_compare(ak, [])){return [_h("p", {}, [`Loading`])]} else{return ((..._) => AM.al(((am)=>{return _h(AQ, {an:am})}), ..._))(this.c(this.ab(this.t(this.l(aj)))))}})()}render(){return _h(AR, {}, _array(this.ao, _h("div", {className:`b`,style:_style([this.$b()])}, [this.ai(this.ap.games)])))}};;class AQ extends _C{constructor(props){super(props);this._d({an:[null,null]})}render(){return _h("div", {className:`c`}, [_h("img", {"src":AL.bd + `/` + this.an.imagem,className:`d`}),_h("div", {}, [_h("h3", {}, [this.an.titulo]),_h("p", {}, [`Descrição: `,this.an.descricao]),_h("p", {}, [`Tempo de jogo: `,AS.be(this.an.tempoDeJogo)]),_h("p", {}, [`Idade mínima: `,AS.be(this.an.idade)]),_h("p", {}, [`Minimo de jogadores: `,AS.be(this.an.minimoDeJogadores)]),_h("p", {}, [`Máximo de jogadores: `,AS.be(this.an.maximoDeJogadores)])])])}};;class AR extends _C{constructor(props){super(props);this._d({bl:["children",[]]})}$e(){const _={};(()=>{let bg = this.bf;if(bg instanceof AH){Object.assign(_, {})} else if(bg instanceof AI){Object.assign(_, {[`--b-a`]:AT.bh + `px`})} else if(bg instanceof AU){Object.assign(_, {[`--b-a`]:AT.bi + `px`})} else if(bg instanceof AV){Object.assign(_, {[`--b-a`]:AT.bj + `px`})} else if(bg instanceof AW){Object.assign(_, {[`--b-a`]:AT.bk + `px`})}})();return _}get bf(){return AK.ar;}componentWillUnmount(){AK._unsubscribe(this)}componentDidMount(){AK._subscribe(this)}render(){return _h("div", {className:`e`,style:_style([this.$e()])}, [this.bl])}};;class A extends _C{$g(){const _={};(()=>{let bn = this.bm;if(bn instanceof AH){Object.assign(_, {[`--c-a`]:`column`,[`--c-b`]:`center`})} else{Object.assign(_, {[`--c-a`]:`row`})}})();(()=>{let bo = this.bm;if(bo instanceof AH){Object.assign(_, {[`--d-a`]:`1rem`,[`--d-b`]:`1rem`})} else{Object.assign(_, {})}})();return _}get bm(){return AK.ar;}get bp(){return AL.as;}get bq(){return AL.at;}componentWillUnmount(){AK._unsubscribe(this);AL._unsubscribe(this)}componentDidMount(){AK._subscribe(this);AL._subscribe(this)}render(){return _h("div", {className:`f`}, [_h(AR, {}, _array(_h("div", {className:`g`,style:_style([this.$g()])}, [$a(),_h("h1", {}, [`Xeque Mate - Cardápio de jogos`])]))),$b(),$c()])}};;class AX extends _C{get bv(){return AJ.aq;}componentWillUnmount(){AJ._unsubscribe(this)}componentDidMount(){AJ._subscribe(this)}render(){return _h("div", {className:`i`}, [_h(AR, {}, _array(_h("div", {className:`h`}, [_h(AY, {bs:AJ.br(new AZ()),bt:`Todos`,bu:`white`,bw:_compare(this.bv, new AZ())}),_h(AY, {bs:AJ.br(new AP(new BA())),bt:`Fácil`,bu:`#41B047`,bw:_compare(this.bv, new AP(new BA()))}),_h(AY, {bs:AJ.br(new AP(new BB())),bt:`Moderado`,bu:`#CA9917`,bw:_compare(this.bv, new AP(new BB()))}),_h(AY, {bs:AJ.br(new AP(new BC())),bt:`Difícil`,bu:`#BF1C22`,bw:_compare(this.bv, new AP(new BC()))}),_h(AY, {bs:AJ.br(new AP(new BD())),bt:`Muito Difícil`,bu:`#6f6f6f`,bw:_compare(this.bv, new AP(new BD()))})])))])}};;class AY extends _C{constructor(props){super(props);this._d({bw:[null,false],bu:[null,`black`],bt:[null,null],bs:[null,null]})}$j(){const _={};(this.bw ? Object.assign(_, {[`--e-a`]:`3px`,[`--e-b`]:`solid`,[`--e-c`]:this.bu,[`--e-d`]:this.bu}) : Object.assign(_, {[`--e-d`]:`white`}));return _}render(){return _h("a", {"href":this.bs,className:`j`,style:_style([this.$j()])}, [this.bt])}};;const $a=_m(() => _h(AF, {}));const $b=_m(() => _h(AX, {}));const $c=_m(() => _h(AG, {}));const AK=new(class extends _S{constructor(){super();this.state={ar:AT.eh(),ej:BG.ce(`resize`, false, ((el)=>{return (()=>{let ek = AT.eh();return (!_compare(ek, this.ar) ? new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({ar:ek})), _resolve)
-})) : new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({})), _resolve)
-})))})()}))}}get ar(){return this.state.ar;}get ej(){return this.state.ej;}});const AL=new(class extends _S{constructor(){super();this.state={fm:false,as:new AD({games:[]}),at:``,aw:new BE(),au:new BE(),av:new BE(),ax:new BE(),az:new BE(),bb:new BE(),bc:new BE()};this._d({bd:(()=>{return `https://artutra.github.io/xequemate-game-menu`})})}get fm(){return this.state.fm;}get as(){return this.state.as;}get at(){return this.state.at;}get aw(){return this.state.aw;}get au(){return this.state.au;}get av(){return this.state.av;}get ax(){return this.state.ax;}get az(){return this.state.az;}get bb(){return this.state.bb;}get bc(){return this.state.bc;}em(en){return (()=>{let eo = en;if(_compare(eo, `Fácil`)){return new BF(new BA())} else if(_compare(eo, `Moderado`)){return new BF(new BB())} else if(_compare(eo, `Difícil`)){return new BF(new BC())} else if(_compare(eo, `Muito difícil`)){return new BF(new BD())} else{return new BE()}})()}ep(eq){return (()=>{let er = eq;if(_compare(er, `facil`)){return new BF(new BA())} else if(_compare(er, `moderado`)){return new BF(new BB())} else if(_compare(er, `dificil`)){return new BF(new BC())} else if(_compare(er, `muito-dificil`)){return new BF(new BD())} else{return new BE()}})()}es(et){return (()=>{let eu = et;if(eu instanceof BA){return `facil`} else if(eu instanceof BB){return `moderado`} else if(eu instanceof BC){return `dificil`} else if(eu instanceof BD){return `muito-dificil`}})()}af(ev){return (()=>{let ew = ev;if(ew instanceof BA){return `Fácil`} else if(ew instanceof BB){return `Moderado`} else if(ew instanceof BC){return `Difícil`} else if(ew instanceof BD){return `Muito difícil`}})()}ex(ey){return (()=>{return ((..._) => BP.dd(ey, ..._))(BP.db(BG.ca().search))})()}ez(fa){return (()=>{return AN.dv(((..._) => AN.f(AS.by, ..._))(((..._) => BP.dd(fa, ..._))(BP.db(BG.ca().search))))})()}fb(fk){return (async()=>{let _ = null;try{let fc = await AL.ex(`title`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({aw:fc})), _resolve)
-}));let fd = await AL.ez(`minPlayers`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({au:fd})), _resolve)
-}));let fe = await AL.ez(`maxPlayers`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({av:fe})), _resolve)
-}));let ff = await AL.ez(`minAge`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({ax:ff})), _resolve)
-}));let fg = await AL.ez(`maxAge`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({az:fg})), _resolve)
-}));let fh = await AL.ez(`minDuration`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bb:fh})), _resolve)
-}));let fi = await AL.ez(`maxDuration`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bc:fi})), _resolve)
-}));await AJ.fj(fk);_ = await AL.fl()}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}fl(){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({fm:true})), _resolve)
-}));let fn = await BI.ct(BI.cl(AL.bd + `/content/jogos/todos.json`));let _2 = ((..._) => AN.dq(`Json Parse Error`, ..._))(BT.ef(fn.body));if(_2 instanceof Err){throw _2._0};let fo = _2._0;let _3 = ((_)=>AD.decode(_))(fo);if(_3 instanceof Err){let _error = _3._0;let fp = _error;_=new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({at:BO.cz(fp)})), _resolve)
-}));throw new DoError()};let fq = _3._0;_ = await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({as:fq})), _resolve)
-}))}catch(_error){if(!(_error instanceof DoError)){_ = new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({at:`Could not decode the response.`})), _resolve)
+    })())}});const BA=new(class extends _M{eh(){return (()=>{let ei = BG.cd();return (ei < 640 ? new AF() : (ei < 768 ? new AU() : (ei < 1024 ? new BB() : (ei < 1280 ? new BC() : new BD()))))})()}constructor(){super();this._d({bs:(()=>{return 640}),bt:(()=>{return 768}),bu:(()=>{return 1024}),bv:(()=>{return 1280})})}});_program.addRoutes([{handler:((fv)=>{(()=>{let fw = AH.es(fv);if(fw instanceof BF){const fx = fw._0;return AH.fd(new AP(fx))} else if(fw instanceof BE){return AH.fd(new BU())}})()}),decoders:[Decoder.string],mapping:['difficulty'],path:`/:difficulty`},{handler:((fy, gb)=>{(()=>{let fz = AH.es(fy);if(fz instanceof BF){const ga = fz._0;return AH.fd(new BV(ga,gb))} else if(fz instanceof BE){return AH.fd(new BU())}})()}),decoders:[Decoder.string,Decoder.string],mapping:['difficulty','slug'],path:`/:difficulty/:slug`},{handler:(()=>{AH.fd(new AO())}),decoders:[],mapping:[],path:`/xequemate-game-menu/`},{handler:(()=>{AH.fd(new AO())}),decoders:[],mapping:[],path:`/`},{handler:(()=>{AH.fd(new BU())}),decoders:[],mapping:[],path:`*`}]);class A extends _C{$b(){const _={};(()=>{let b = this.a;if(b instanceof AF){Object.assign(_, {[`--a-a`]:`column`,[`--a-b`]:`center`})} else{Object.assign(_, {[`--a-a`]:`row`})}})();(()=>{let c = this.a;if(c instanceof AF){Object.assign(_, {[`--b-a`]:`1rem`,[`--b-b`]:`1rem`})} else{Object.assign(_, {})}})();return _}get a(){return AG.d;}get f(){return AH.e;}get h(){return AH.g;}componentWillUnmount(){AG._unsubscribe(this);AH._unsubscribe(this)}componentDidMount(){AG._subscribe(this);AH._subscribe(this)}render(){return _h("div", {className:`a`}, [_h(AI, {}, _array(_h("div", {className:`b`,style:_style([this.$b()])}, [$a(),_h("h1", {}, [`Xeque Mate - Cardápio de jogos`])]))),$b(),$c()])}};;class AK extends _C{get m(){return AM.o;}componentWillUnmount(){AM._unsubscribe(this)}componentDidMount(){AM._subscribe(this)}render(){return _h("div", {className:`d`}, [_h(AI, {}, _array(_h("div", {className:`c`}, [_h(AN, {j:AM.i(new AO()),k:`Todos`,l:`white`,n:_compare(this.m, new AO())}),_h(AN, {j:AM.i(new AP(new AQ())),k:`Fácil`,l:`#41B047`,n:_compare(this.m, new AP(new AQ()))}),_h(AN, {j:AM.i(new AP(new AR())),k:`Moderado`,l:`#CA9917`,n:_compare(this.m, new AP(new AR()))}),_h(AN, {j:AM.i(new AP(new AS())),k:`Difícil`,l:`#BF1C22`,n:_compare(this.m, new AP(new AS()))}),_h(AN, {j:AM.i(new AP(new AT())),k:`Muito Difícil`,l:`#6f6f6f`,n:_compare(this.m, new AP(new AT()))})])))])}};;class AN extends _C{constructor(props){super(props);this._d({n:[null,false],l:[null,`black`],k:[null,null],j:[null,null]})}$e(){const _={};(this.n ? Object.assign(_, {[`--c-a`]:`3px`,[`--c-b`]:`solid`,[`--c-c`]:this.l,[`--c-d`]:this.l}) : Object.assign(_, {[`--c-d`]:`white`}));return _}render(){return _h("a", {"href":this.j,className:`e`,style:_style([this.$e()])}, [this.k])}};;class AL extends _C{$f(){const _={};(()=>{let q = this.p;if(q instanceof AF){Object.assign(_, {[`--d-a`]:`1fr`})} else if(q instanceof AU){Object.assign(_, {[`--d-a`]:`1fr`})} else{Object.assign(_, {[`--d-a`]:`1fr 1fr 1fr`})}})();return _}get ar(){return AM.o;}get p(){return AG.d;}get be(){return AH.e;}get bd(){return AH.g;}get ao(){return AH.bf;}get al(){return AH.bg;}get y(){return AH.bh;}get bj(){return AH.bi;}get bl(){return AH.bk;}get ag(){return AH.bm;}get ad(){return AH.bn;}componentWillUnmount(){AM._unsubscribe(this);AG._unsubscribe(this);AH._unsubscribe(this)}componentDidMount(){AM._subscribe(this);AG._subscribe(this);AH._subscribe(this)}r(z){return ((..._) => AV.s(((x)=>{return ((..._) => AW.t(true, ..._))(((..._) => AW.u(((w)=>{return AX.v(w, x.titulo)}), ..._))(this.y))}), ..._))(z)}aa(ah){return ((..._) => AV.s(((ab)=>{return ((..._) => AW.t(true, ..._))(((..._) => AW.u(((ac)=>{return ab.tempoDeJogo <= ac}), ..._))(this.ad))}), ..._))(((..._) => AV.s(((ae)=>{return ((..._) => AW.t(true, ..._))(((..._) => AW.u(((af)=>{return ae.tempoDeJogo >= af}), ..._))(this.ag))}), ..._))(ah))}ai(ap){return ((..._) => AV.s(((aj)=>{return ((..._) => AW.t(true, ..._))(((..._) => AW.u(((ak)=>{return aj.minimoDeJogadores <= ak}), ..._))(this.al))}), ..._))(((..._) => AV.s(((am)=>{return ((..._) => AW.t(true, ..._))(((..._) => AW.u(((an)=>{return am.minimoDeJogadores >= an}), ..._))(this.ao))}), ..._))(ap))}aq(aw){return (()=>{let as = this.ar;if(as instanceof AP){const av = as._0;return ((..._) => AV.s(((at)=>{return _compare(at.dificuldade, AH.au(av))}), ..._))(aw)} else{return aw}})()}ax(ay){return (()=>{let az = ay;if(_compare(az, [])){return [_h("p", {}, [`Loading`])]} else{return ((..._) => AV.ba(((bb)=>{return _h(AY, {bc:bb})}), ..._))(this.r(this.aq(this.ai(this.aa(ay)))))}})()}render(){return _h(AI, {}, _array(this.bd, _h("div", {className:`f`,style:_style([this.$f()])}, [this.ax(this.be.games)])))}};;class AY extends _C{constructor(props){super(props);this._d({bc:[null,null]})}render(){return _h("div", {className:`g`}, [_h("img", {"src":AH.bo + `/` + this.bc.imagem,className:`h`}),_h("div", {}, [_h("h3", {}, [this.bc.titulo]),_h("p", {}, [`Descrição: `,this.bc.descricao]),_h("p", {}, [`Tempo de jogo: `,AZ.bp(this.bc.tempoDeJogo)]),_h("p", {}, [`Idade mínima: `,AZ.bp(this.bc.idade)]),_h("p", {}, [`Minimo de jogadores: `,AZ.bp(this.bc.minimoDeJogadores)]),_h("p", {}, [`Máximo de jogadores: `,AZ.bp(this.bc.maximoDeJogadores)])])])}};;class AJ extends _C{render(){return _h("img", {"src":`/assets/logo_67fee8dd321e2d06bd4d074d36dd08b6.jpg`,className:`i`})}};;class AI extends _C{constructor(props){super(props);this._d({bw:["children",[]]})}$j(){const _={};(()=>{let br = this.bq;if(br instanceof AF){Object.assign(_, {})} else if(br instanceof AU){Object.assign(_, {[`--e-a`]:BA.bs + `px`})} else if(br instanceof BB){Object.assign(_, {[`--e-a`]:BA.bt + `px`})} else if(br instanceof BC){Object.assign(_, {[`--e-a`]:BA.bu + `px`})} else if(br instanceof BD){Object.assign(_, {[`--e-a`]:BA.bv + `px`})}})();return _}get bq(){return AG.d;}componentWillUnmount(){AG._unsubscribe(this)}componentDidMount(){AG._subscribe(this)}render(){return _h("div", {className:`j`,style:_style([this.$j()])}, [this.bw])}};;const $a=_m(() => _h(AJ, {}));const $b=_m(() => _h(AK, {}));const $c=_m(() => _h(AL, {}));const AM=new(class extends _S{constructor(){super();this.state={o:new AO()}}get o(){return this.state.o;}ej(ek){return new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({o:ek})), _resolve)
+}))}i(el){return (()=>{let em = el;if(em instanceof AO){return `/`} else if(em instanceof AP){const eo = em._0;return `/` + AH.en(eo)} else{return `/`}})()}});const AH=new(class extends _S{constructor(){super();this.state={fn:false,e:new AD({games:[]}),g:``,bh:new BE(),bf:new BE(),bg:new BE(),bi:new BE(),bk:new BE(),bm:new BE(),bn:new BE()};this._d({bo:(()=>{return `https://artutra.github.io/xequemate-game-menu`})})}get fn(){return this.state.fn;}get e(){return this.state.e;}get g(){return this.state.g;}get bh(){return this.state.bh;}get bf(){return this.state.bf;}get bg(){return this.state.bg;}get bi(){return this.state.bi;}get bk(){return this.state.bk;}get bm(){return this.state.bm;}get bn(){return this.state.bn;}ep(eq){return (()=>{let er = eq;if(_compare(er, `Fácil`)){return new BF(new AQ())} else if(_compare(er, `Moderado`)){return new BF(new AR())} else if(_compare(er, `Difícil`)){return new BF(new AS())} else if(_compare(er, `Muito difícil`)){return new BF(new AT())} else{return new BE()}})()}es(et){return (()=>{let eu = et;if(_compare(eu, `facil`)){return new BF(new AQ())} else if(_compare(eu, `moderado`)){return new BF(new AR())} else if(_compare(eu, `dificil`)){return new BF(new AS())} else if(_compare(eu, `muito-dificil`)){return new BF(new AT())} else{return new BE()}})()}en(ev){return (()=>{let ew = ev;if(ew instanceof AQ){return `facil`} else if(ew instanceof AR){return `moderado`} else if(ew instanceof AS){return `dificil`} else if(ew instanceof AT){return `muito-dificil`}})()}au(ex){return (()=>{let ey = ex;if(ey instanceof AQ){return `Fácil`} else if(ey instanceof AR){return `Moderado`} else if(ey instanceof AS){return `Difícil`} else if(ey instanceof AT){return `Muito difícil`}})()}ez(fa){return (()=>{return ((..._) => BP.dd(fa, ..._))(BP.db(BG.ca().search))})()}fb(fc){return (()=>{return AW.dv(((..._) => AW.u(AZ.by, ..._))(((..._) => BP.dd(fc, ..._))(BP.db(BG.ca().search))))})()}fd(fl){return (async()=>{let _ = null;try{let fe = await AH.ez(`title`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bh:fe})), _resolve)
+}));let ff = await AH.fb(`minPlayers`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bf:ff})), _resolve)
+}));let fg = await AH.fb(`maxPlayers`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bg:fg})), _resolve)
+}));let fh = await AH.fb(`minAge`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bi:fh})), _resolve)
+}));let fi = await AH.fb(`maxAge`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bk:fi})), _resolve)
+}));let fj = await AH.fb(`minDuration`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bm:fj})), _resolve)
+}));let fk = await AH.fb(`maxDuration`);await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({bn:fk})), _resolve)
+}));await AM.ej(fl);_ = await AH.fm()}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}fm(){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({fn:true})), _resolve)
+}));let fo = await BI.ct(BI.cl(AH.bo + `/content/jogos/todos.json`));let _2 = ((..._) => AW.dq(`Json Parse Error`, ..._))(BT.ef(fo.body));if(_2 instanceof Err){throw _2._0};let fp = _2._0;let _3 = ((_)=>AD.decode(_))(fp);if(_3 instanceof Err){let _error = _3._0;let fq = _error;_=new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({g:BO.cz(fq)})), _resolve)
+}));throw new DoError()};let fr = _3._0;_ = await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({e:fr})), _resolve)
+}))}catch(_error){if(!(_error instanceof DoError)){_ = new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({g:`Could not decode the response.`})), _resolve)
 }))}}finally {
-  new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({fm:false})), _resolve)
+  new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({fn:false})), _resolve)
   }))
-};return _})()}});const AJ=new(class extends _S{constructor(){super();this.state={aq:new AZ()}}get aq(){return this.state.aq;}fj(fr){return new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({aq:fr})), _resolve)
-}))}br(fs){return (()=>{let ft = fs;if(ft instanceof AZ){return `/`} else if(ft instanceof AP){const fu = ft._0;return `/` + AL.es(fu)} else{return `/`}})()}});_insertStyles(`
+};return _})()}});const AG=new(class extends _S{constructor(){super();this.state={d:BA.eh(),fs:BG.ce(`resize`, false, ((fu)=>{return (()=>{let ft = BA.eh();return (!_compare(ft, this.d) ? new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({d:ft})), _resolve)
+})) : new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({})), _resolve)
+})))})()}))}}get d(){return this.state.d;}get fs(){return this.state.fs;}});_insertStyles(`
 .a {
-  height: 60px;
-  width: 60px;
-}
-
-.b {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: var(--a-a);
-}
-
-.c {
-  background: #6E30A8;
-  padding: 1.5rem;
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.d {
-  width: 10rem;
-  height: 10rem;
-  margin-right: 1.5rem;
-}
-
-.e {
-  margin: auto;
-  max-width: var(--b-a);
-}
-
-.f {
   display: block;
   font-weight: bold;
   width: 100vw;
@@ -199,41 +169,41 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   overflow: auto;
 }
 
-.f * {
+.a * {
   font-family: "Gilroy", sans-serif;
 }
 
-.g {
+.b {
   display: flex;
   justify-content: space-between;
-  align-items: var(--c-b, center);
+  align-items: var(--a-b, center);
   padding: 1rem 0 1rem 0;
-  flex-direction: var(--c-a);
+  flex-direction: var(--a-a);
 }
 
-.g h1 {
+.b h1 {
   font-size: 1.75rem;
   text-align: center;
   color: white;
-  padding-left: var(--d-a);
-  padding-right: var(--d-b);
+  padding-left: var(--b-a);
+  padding-right: var(--b-b);
 }
 
-.h {
+.c {
   overflow-x: auto;
   padding-left: .5rem;
   padding-right: 1rem;
   display: flex;
 }
 
-.i {
+.d {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ffffff1f;
   margin-bottom: 1rem;
 }
 
-.j {
+.e {
   padding-top: .5rem;
   padding-bottom: .5rem;
   font-weight: 500;
@@ -242,10 +212,40 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   white-space: nowrap;
   cursor: pointer;
   text-decoration: none;
-  border-bottom-width: var(--e-a);
-  border-bottom-style: var(--e-b);
-  border-bottom-color: var(--e-c);
-  color: var(--e-d);
+  border-bottom-width: var(--c-a);
+  border-bottom-style: var(--c-b);
+  border-bottom-color: var(--c-c);
+  color: var(--c-d);
+}
+
+.f {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: var(--d-a);
+}
+
+.g {
+  background: #6E30A8;
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.h {
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1.5rem;
+}
+
+.i {
+  height: 60px;
+  width: 60px;
+}
+
+.j {
+  margin: auto;
+  max-width: var(--e-a);
 }
 `)
 

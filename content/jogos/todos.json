@@ -1,6 +1,16 @@
 {
   "games": [
     {
+      "titulo": "mais um jogo",
+      "imagem": "uploads/dobble.jpg",
+      "descricao": "descrição do jogo",
+      "tempo_de_jogo": 30,
+      "idade": 6,
+      "dificuldade": "Fácil",
+      "minimo_de_jogadores": 1,
+      "maximo_de_jogadores": 4
+    },
+    {
       "titulo": "Dobble",
       "imagem": "uploads/dobble-pre-venda.png",
       "descricao": "Outro jogo bão",
